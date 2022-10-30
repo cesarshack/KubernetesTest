@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Contador de Navidad</title>
+        <style>
+            html, body {
+                height: 100vh;
+                flex: auto;
+            }
+            #countdown-text { 
+                width: 100%;
+                text-align: center;
+                font-size: 128;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="countdown-text">Loading...</h1>
+        <script>
+            ( async () => {
+                const countdown = await fetch("/countdown").then( r => r.json() );
+                console.log(countdown);
+                document.getElementById( "countdown-text" ).innerText = `${countdown.timeUntilD.toFixed( 2 )} Days Until Christmas`;
+            })();
+        </script>
+    </body>
+</html>

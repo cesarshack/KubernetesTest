@@ -1,0 +1,25 @@
+{
+  "name": "kubernetes",
+  "version": "1.0.0",
+  "description": "testing kubernetes nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cesarshack/KubernetesTest.git"
+  },
+  "keywords": [
+    "yes"
+  ],
+  "author": "Shack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cesarshack/KubernetesTest/issues"
+  },
+  "homepage": "https://github.com/cesarshack/KubernetesTest#readme",
+  "dependencies": {
+    "webwebweb": "^1.4.10"
+  }
+}
